@@ -16,4 +16,13 @@ public class GrupoAutomovel {
     public void setClasse(String classe){
         this.classe = classe;
     }
+
+    @Override
+    public String toString() {
+        return "GrupoAutomovel{" +
+                "nome='" + nome + '\'' +
+                ", portas=" + portas +
+                ", classe='" + classe + '\'' +
+                '}';
+    }
 }
