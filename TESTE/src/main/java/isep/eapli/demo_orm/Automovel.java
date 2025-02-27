@@ -8,4 +8,13 @@ public class Automovel {
         this.km = km;
         this.matricula = matricula;
     }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    @Override
+    public String toString() {
+        return "Kms: " + this.km + " Matrícula: " + this.matricula;
+    }
 }
