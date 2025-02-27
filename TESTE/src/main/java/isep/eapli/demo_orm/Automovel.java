@@ -17,4 +17,8 @@ public class Automovel {
     public String toString() {
         return "Kms: " + this.km + " Matrícula: " + this.matricula;
     }
+
+    public void setKm(double km) {
+        this.km = km;
+    }
 }
