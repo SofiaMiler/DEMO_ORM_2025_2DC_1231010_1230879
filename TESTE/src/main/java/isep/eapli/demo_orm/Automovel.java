@@ -8,4 +8,8 @@ public class Automovel {
         this.km = km;
         this.matricula = matricula;
     }
+
+    public void setKm(double km) {
+        this.km = km;
+    }
 }
