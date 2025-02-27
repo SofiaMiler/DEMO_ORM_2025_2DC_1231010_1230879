@@ -13,4 +13,7 @@ public class GrupoAutomovel {
     public void setPortas(Integer portas) {
         this.portas = portas;
     }
+    public void setClasse(String classe){
+        this.classe = classe;
+    }
 }
