@@ -3,12 +3,20 @@ package isep.eapli.demo_orm.Domain;
 import jakarta.persistence.*;
 
 @Entity
-public class Cliente {
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "client_type", discriminatorType = DiscriminatorType.STRING)
+
+public abstract class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String clientId;
-    @ManyToOne
-    private ClientType clientType;
-    @ManyToOne
-    private ContratoAluguer contrato;
+
+
+
+    public Cliente(){
+
+    }
+    public Cliente(String nifCliente) {
+        this.clientId = nifCliente;
+    }
 }
